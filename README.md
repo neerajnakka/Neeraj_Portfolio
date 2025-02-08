@@ -44,7 +44,7 @@ The website is built using the following technologies:
 ## 🚀 How It’s Made
 
 ### 1. **Project Setup**
-- The project was initialized using `create-react-app` for a quick and clean setup.
+- The project was initialized using `vite` for a quick and clean setup.
 - Dependencies like `react-router-dom`, `framer-motion`, `three`, and `zustand` were installed via npm.
 
 ### 2. **Design & Development**
