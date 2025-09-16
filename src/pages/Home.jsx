@@ -51,7 +51,7 @@ export default function Home() {
           >
             <div className="space-y-4">
               <motion.h1
-                className="text-5xl md:text-7xl font-bold"
+                className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -59,7 +59,7 @@ export default function Home() {
                 Hi, I'm <AnimatedText text="Neeraj" />
               </motion.h1>
               <motion.h2
-                className="text-3xl md:text-4xl font-semibold"
+                className="text-3xl md:text-4xl font-semibold text-gray-800 dark:text-gray-100"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}

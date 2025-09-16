@@ -19,14 +19,6 @@
   }
 }
 
-.text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent-500 animate-gradient;
-}
-
-.text-gradient-dark {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-accent-400 animate-gradient;
-}
-
 .card-hover {
   @apply transition-all duration-300 hover:shadow-lg dark:hover:shadow-gray-900/50 hover:-translate-y-1;
 }
