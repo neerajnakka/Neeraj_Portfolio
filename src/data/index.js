@@ -132,10 +132,7 @@ export const SKILLS = [
     name: 'Tailwind CSS',
     icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg',
   },
-  {
-    name: 'Bootstrap',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg',
-  },
+  
 
   // Backend & API
   {
@@ -150,10 +147,7 @@ export const SKILLS = [
     name: 'GraphQL',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg',
   },
-  {
-    name: 'REST API Design',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/api/api-original.svg',
-  },
+  
 
   // DevOps & Cloud
   {

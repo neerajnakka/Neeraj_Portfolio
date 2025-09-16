@@ -32,11 +32,27 @@ const experiences = [
 
 const achievements = [
   {
+    title: 'AWS Certified Cloud Practitioner',
+    issuer: 'Udemy',
+    date: '2025',
+    description:
+      'Validated knowledge of AWS cloud concepts, core services, security, and architecture best practices.',
+    icon: CheckCircle,
+  },
+  {
+    title: 'DevOps Fundamentals',
+    issuer: 'Udemy',
+    date: '2024',
+    description:
+      'Completed a hands-on course covering CI/CD pipelines, Docker, GitHub Actions, and infrastructure automation principles.',
+    icon: CheckCircle,
+  },
+  {
     title: 'Certified Full Stack Developer',
     issuer: 'Naresh I Technologies',
     date: '2024',
     description:
-      'Completed a comprehensive course covering front-end and back-end development technologies.',
+      'Comprehensive training in front-end and back-end development with modern frameworks and deployment strategies.',
     icon: CheckCircle,
   },
   {
@@ -47,7 +63,6 @@ const achievements = [
       'Certified in SQL and PL/SQL, demonstrating expertise in designing, implementing, and managing relational databases efficiently.',
     icon: CheckCircle,
   },
-
   {
     title: 'Java Programming Certification',
     issuer: 'Coursera',
@@ -57,14 +72,15 @@ const achievements = [
     icon: CheckCircle,
   },
   {
-    title: 'Frontend Certification',
+    title: 'Frontend Web Development',
     issuer: 'Coursera',
     date: '2021',
     description:
-      'Certified in frontend web development, focusing on HTML, CSS, JavaScript, and responsive design principles.',
+      'Focused on HTML, CSS, JavaScript, and responsive design principles for modern, accessible interfaces.',
     icon: CheckCircle,
   },
 ];
+
 
 export default function About() {
   const [ref, inView] = useInView({
