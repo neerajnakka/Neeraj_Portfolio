@@ -1,9 +1,19 @@
-export const HERO_CONTENT = `Passionate Software Engineer with a proven track record of crafting innovative solutions to complex challenges. Specializing in building scalable web applications using cutting-edge technologies like React, Node.js, and MongoDB. My expertise spans across modern frameworks, cloud architecture, and real-time communication systems. I'm committed to delivering exceptional user experiences while adhering to best practices in software development. Let's collaborate to bring your ideas to life!`;
-export const ABOUT_TEXT = `As a Computer Science graduate from CVR College of Engineering in Hyderabad, India, I've turned my passion for technology into a thriving career in software engineering. My journey began with a curiosity about how things work under the hood, which has evolved into a deep expertise in full-stack development.
+export const HERO_CONTENT = `
+Full-Stack & Cloud Engineer who loves turning complex ideas into elegant, production-ready software.  
+I build scalable web apps with React, Node.js, and MongoDB, and deploy them with AWS services and CI/CD pipelines.  
+From real-time chat systems to high-availability cloud architectures, I focus on clean code, strong security, and seamless user experiences.
+`;
 
-I take pride in my holistic approach to problem-solving and my dedication to writing clean, maintainable code. I thrive in collaborative environments where I can contribute my technical skills while continuously learning from others. Outside of coding, you'll find me expanding my knowledge through technical literature, exploring emerging technologies, or nurturing my garden—a hobby that has taught me patience and the value of steady growth.
+export const ABOUT_TEXT = `
+I’m a Computer Science graduate from CVR College of Engineering, Hyderabad, driven by curiosity about how systems work end-to-end.  
+Over the last few years I’ve designed and deployed full-stack applications using the MERN stack and Java, while sharpening my skills in AWS (EC2, S3, Lambda) and DevOps tools like Docker, GitHub Actions, and Jenkins.
 
-I'm particularly passionate about creating scalable web applications and implementing efficient solutions that drive real-world impact. With hands-on experience in modern frameworks and tools, I'm always eager to embrace new technologies that enhance project outcomes and deliver exceptional results.`;
+My approach blends solid engineering fundamentals with a love of learning—whether that means optimizing database queries, automating deployments, or exploring new frameworks.  
+When I’m not coding, I’m either reading up on emerging cloud technologies or tending to my garden, a practice that reminds me that growth—technical or botanical—comes from steady, thoughtful care.
+
+I’m eager to create software that scales gracefully, solves real problems, and delivers measurable impact.
+`;
+
 
 export const PROJECTS = [
   {
@@ -78,8 +88,20 @@ export const SKILLS = [
     name: 'JavaScript',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
   },
+  {
+    name: 'TypeScript',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+  },
 
   // Databases
+  {
+    name: 'PostgreSQL',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+  },
+  {
+    name: 'MySQL',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+  },
   {
     name: 'Oracle SQL',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg',
@@ -89,17 +111,22 @@ export const SKILLS = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg',
   },
   {
-    name: 'MySQL',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
-  },
-  {
     name: 'MongoDB',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
   },
 
+  // Frontend
   {
     name: 'React',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+  },
+  {
+    name: 'HTML5',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+  },
+  {
+    name: 'CSS3',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
   },
   {
     name: 'Tailwind CSS',
@@ -110,7 +137,7 @@ export const SKILLS = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg',
   },
 
-  // Backend Skills
+  // Backend & API
   {
     name: 'Node.js',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
@@ -119,15 +146,35 @@ export const SKILLS = [
     name: 'Express',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
   },
-
-  // Frontend Skills
   {
-    name: 'HTML5',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+    name: 'GraphQL',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg',
   },
   {
-    name: 'CSS3',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+    name: 'REST API Design',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/api/api-original.svg',
+  },
+
+  // DevOps & Cloud
+  {
+    name: 'AWS',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
+  },
+  {
+    name: 'Docker',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+  },
+  {
+    name: 'GitHub Actions',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+  },
+  {
+    name: 'Jenkins',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg',
+  },
+  {
+    name: 'Linux',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
   },
 
   // Version Control
