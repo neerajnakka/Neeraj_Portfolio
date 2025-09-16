@@ -39,7 +39,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen pt-16 bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen pt-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center py-16">
           <motion.div
@@ -69,7 +69,7 @@ export default function Home() {
             </div>
 
             <motion.p
-              className="text-lg text-gray-600 leading-relaxed"
+              className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -99,7 +99,7 @@ export default function Home() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-full bg-gray-100 hover:bg-indigo-50 hover:text-indigo-600 transition-colors"
+                    className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-indigo-50 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-indigo-400 text-gray-600 dark:text-gray-300 transition-colors"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     initial={{ opacity: 0, x: -20 }}

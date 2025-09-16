@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 
 export default function Layout({ children }) {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <Navigation />
       <motion.main
         initial={{ opacity: 0, y: 20 }}

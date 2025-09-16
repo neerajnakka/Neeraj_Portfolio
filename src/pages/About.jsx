@@ -89,7 +89,7 @@ export default function About() {
   });
 
   return (
-    <div className="min-h-screen pt-16 bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen pt-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main Content */}
         <motion.div
@@ -102,15 +102,15 @@ export default function About() {
           {/* Title Section */}
           <div className="text-center mb-16">
             <motion.h1
-              className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500 mb-6"
+              className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500 dark:from-indigo-400 dark:to-blue-400 mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              About <span className="text-black">Me</span>
+              About <span className="text-black dark:text-white">Me</span>
             </motion.h1>
             <motion.div
-              className="prose prose-lg mx-auto text-gray-600 leading-relaxed"
+              className="prose prose-lg mx-auto text-gray-600 dark:text-gray-300 leading-relaxed"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -127,6 +127,9 @@ export default function About() {
             className="mt-16"
           >
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
+              My Journey
+            </h2>
+            <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
               My Journey
             </h2>
             <div className="space-y-12">
@@ -146,21 +149,21 @@ export default function About() {
                   </div>
 
                   {/* Card */}
-                  <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg dark:shadow-gray-900/50 p-6 hover:shadow-2xl dark:hover:shadow-gray-900/70 transition-shadow duration-300">
                     <div className="flex items-center text-sm text-indigo-600 mb-2">
                       <Calendar className="h-4 w-4 mr-2" />
                       {exp.year}
                     </div>
-                    <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+                    <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
                       {exp.role}
                     </h3>
-                    <p className="text-gray-600 mb-4">{exp.company}</p>
-                    <p className="text-gray-700 mb-4">{exp.description}</p>
+                    <p className="text-gray-600 dark:text-gray-300 mb-4">{exp.company}</p>
+                    <p className="text-gray-700 dark:text-gray-300 mb-4">{exp.description}</p>
                     <div className="flex flex-wrap gap-2">
                       {exp.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="px-3 py-1 text-sm text-indigo-600 bg-indigo-100 rounded-full"
+                          className="px-3 py-1 text-sm text-indigo-600 dark:text-indigo-400 bg-indigo-100 dark:bg-indigo-900/30 rounded-full"
                         >
                           {tech}
                         </span>
@@ -179,7 +182,7 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="mt-24"
           >
-            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
+            <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
               Achievements & Certifications
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -189,7 +192,7 @@ export default function About() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
-                  className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 relative"
+                  className="bg-white dark:bg-gray-800 rounded-xl shadow-lg dark:shadow-gray-900/50 p-6 hover:shadow-2xl dark:hover:shadow-gray-900/70 transition-shadow duration-300 relative"
                 >
                   {/* Icon */}
                   <div className="absolute -top-6 left-6 bg-indigo-600 p-3 rounded-full text-white shadow-md">
@@ -197,13 +200,13 @@ export default function About() {
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-semibold text-gray-900 mt-4 mb-2">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-4 mb-2">
                     {ach.title}
                   </h3>
                   <p className="text-sm text-indigo-600 mb-2">
                     Issued by: {ach.issuer} • {ach.date}
                   </p>
-                  <p className="text-gray-700 mb-4">{ach.description}</p>
+                  <p className="text-gray-700 dark:text-gray-300 mb-4">{ach.description}</p>
                 </motion.div>
               ))}
             </div>
