@@ -53,7 +53,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen pt-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
+    <div className="min-h-screen pt-16 bg-gradient-to-b from-gray-50 to-white">
       {/* Success Modal */}
       {showSuccessModal && (
         <motion.div
@@ -65,14 +65,14 @@ export default function Contact() {
           <motion.div
             initial={{ scale: 0.5 }}
             animate={{ scale: 1 }}
-            className="bg-white dark:bg-gray-800 rounded-xl p-8 max-w-md w-full text-center relative"
+            className="bg-white rounded-xl p-8 max-w-md w-full text-center relative"
             onClick={(e) => e.stopPropagation()}
           >
             <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">
               Message Sent!
             </h3>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-gray-600">
               I will contact you as soon as possible.
             </p>
             <button
@@ -93,10 +93,10 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h1 className="text-5xl font-bold text-gray-900 mb-4">
             Get in <span className="text-indigo-600">Touch</span>
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300">
+          <p className="text-lg text-gray-600">
             Let's create something amazing together
           </p>
         </motion.div>
@@ -115,36 +115,36 @@ export default function Contact() {
               />
 
               {/* Form Fields */}
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
                 Name
               </label>
               <input
                 type="text"
                 name="name"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
                 placeholder="Your name"
               />
 
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
                 Email
               </label>
               <input
                 type="email"
                 name="email"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
                 placeholder="your.email@example.com"
               />
 
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
                 Message
               </label>
               <textarea
                 name="message"
                 rows={6}
                 required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
                 placeholder="Your message"
               />
 
@@ -165,43 +165,43 @@ export default function Contact() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="space-y-8"
           >
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm dark:shadow-gray-900/50 p-6 hover:shadow-md dark:hover:shadow-gray-900/70 transition-shadow">
+            <div className="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow">
               <div className="flex items-start">
                 <MapPin className="h-8 w-8 text-indigo-600" />
                 <div className="ml-4">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-xl font-semibold text-gray-900">
                     Location
                   </h3>
-                  <p className="mt-2 text-gray-600 dark:text-gray-300">{CONTACT.address}</p>
+                  <p className="mt-2 text-gray-600">{CONTACT.address}</p>
                 </div>
               </div>
             </div>
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm dark:shadow-gray-900/50 p-6 hover:shadow-md dark:hover:shadow-gray-900/70 transition-shadow">
+            <div className="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
                   <Phone className="h-8 w-8 text-indigo-600" />
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Phone</h3>
-                  <p className="mt-2 text-gray-600 dark:text-gray-300">{CONTACT.phoneNo}</p>
+                  <h3 className="text-xl font-semibold text-gray-900">Phone</h3>
+                  <p className="mt-2 text-gray-600">{CONTACT.phoneNo}</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm dark:shadow-gray-900/50 p-6 hover:shadow-md dark:hover:shadow-gray-900/70 transition-shadow">
+            <div className="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
                   <Mail className="h-8 w-8 text-indigo-600" />
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Email</h3>
-                  <p className="mt-2 text-gray-600 dark:text-gray-300">{CONTACT.email}</p>
+                  <h3 className="text-xl font-semibold text-gray-900">Email</h3>
+                  <p className="mt-2 text-gray-600">{CONTACT.email}</p>
                 </div>
               </div>
             </div>
 
             <div className="pt-6">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 Connect with me
               </h3>
               <div className="flex gap-4">
@@ -211,7 +211,7 @@ export default function Contact() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-indigo-50 dark:hover:bg-gray-600 hover:text-indigo-600 dark:hover:text-indigo-400 text-gray-600 dark:text-gray-300 transition-colors"
+                    className="p-3 rounded-full bg-gray-100 hover:bg-indigo-50 hover:text-indigo-600 transition-colors"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                   >
